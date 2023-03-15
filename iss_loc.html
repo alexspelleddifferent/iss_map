@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+    <main>
+        <h1>Where is the ISS?</h1>
+        <p>This page updates every 10 seconds</p>
+        <p>The location was last updated at <span id='update_time'></span></p>
+        <div>
+            <p>ISS Latitude: <span id='iss_lat'></span></p>
+            <p>ISS Longitude: <span id='iss_lon'></span></p>
+        </div> 
+        <div id="iss_map"></div> 
+    </main>
+    <script async defer src="fetch.js"></script>
+    </body>
+</html>
